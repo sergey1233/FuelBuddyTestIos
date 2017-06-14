@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		40FB03B3255A83D0210BC019 /* Pods_FuelBuddyTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F266C5CD06B69EDCDF230F0F /* Pods_FuelBuddyTest.framework */; };
+		CA3E4E5C1EB323F300A00044 /* PetroleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3E4E5B1EB323F300A00044 /* PetroleCell.swift */; };
+		CA3E4E5F1EB3243900A00044 /* Petrole.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3E4E5E1EB3243900A00044 /* Petrole.swift */; };
+		CA4655881EA5FBF3001A974B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4655871EA5FBF3001A974B /* AppDelegate.swift */; };
+		CA46558A1EA5FBF3001A974B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4655891EA5FBF3001A974B /* MapViewController.swift */; };
+		CA46558D1EA5FBF3001A974B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA46558B1EA5FBF3001A974B /* Main.storyboard */; };
+		CA4655921EA5FBF3001A974B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA4655901EA5FBF3001A974B /* LaunchScreen.storyboard */; };
+		CA6E7AAA1EA64F5D00F7096D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA6E7AA91EA64F5D00F7096D /* Assets.xcassets */; };
+		CA6E7AAC1EA7437100F7096D /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6E7AAB1EA7437100F7096D /* GlobalVariables.swift */; };
+		CA6E7AAE1EA7447C00F7096D /* NextStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6E7AAD1EA7447C00F7096D /* NextStepViewController.swift */; };
+		CA97F6BA1EA7718000633C3F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA97F6B91EA7718000633C3F /* Localizable.strings */; };
+		CA97F6BC1EA793DC00633C3F /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA97F6BB1EA793DC00633C3F /* SearchTextField.swift */; };
+		CADB78111EBB72B20024E2C1 /* CustomMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CADB78101EBB72B20024E2C1 /* CustomMarkerView.swift */; };
+		CADCC2F11EDAE609002C46AB /* helveticaneuecyr-light.otf in Resources */ = {isa = PBXBuildFile; fileRef = CADCC2ED1EDAE598002C46AB /* helveticaneuecyr-light.otf */; };
+		CADCC2F21EDAE609002C46AB /* HelveticaNeueCyr-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CADCC2EE1EDAE598002C46AB /* HelveticaNeueCyr-LightItalic.otf */; };
+		CADCC2F31EDAE609002C46AB /* HelveticaNeueCyr-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = CADCC2EF1EDAE598002C46AB /* HelveticaNeueCyr-Medium.otf */; };
+		CADCC2F41EDAE609002C46AB /* helveticaneuecyr-roman.otf in Resources */ = {isa = PBXBuildFile; fileRef = CADCC2F01EDAE598002C46AB /* helveticaneuecyr-roman.otf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B7D6EADE848CA929E0463593 /* Pods-FuelBuddyTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelBuddyTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FuelBuddyTest/Pods-FuelBuddyTest.debug.xcconfig"; sourceTree = "<group>"; };
+		B97B48D100BCB15453F70F5D /* Pods-FuelBuddyTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuelBuddyTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-FuelBuddyTest/Pods-FuelBuddyTest.release.xcconfig"; sourceTree = "<group>"; };
+		CA3E4E5B1EB323F300A00044 /* PetroleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetroleCell.swift; sourceTree = "<group>"; };
+		CA3E4E5E1EB3243900A00044 /* Petrole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Petrole.swift; sourceTree = "<group>"; };
+		CA4655841EA5FBF3001A974B /* FuelBuddyTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuelBuddyTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA4655871EA5FBF3001A974B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CA4655891EA5FBF3001A974B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		CA46558C1EA5FBF3001A974B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CA4655911EA5FBF3001A974B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CA4655931EA5FBF3001A974B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA6E7AA91EA64F5D00F7096D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA6E7AAB1EA7437100F7096D /* GlobalVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
+		CA6E7AAD1EA7447C00F7096D /* NextStepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextStepViewController.swift; sourceTree = "<group>"; };
+		CA97F6B91EA7718000633C3F /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		CA97F6BB1EA793DC00633C3F /* SearchTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		CADB78101EBB72B20024E2C1 /* CustomMarkerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMarkerView.swift; sourceTree = "<group>"; };
+		CADCC2ED1EDAE598002C46AB /* helveticaneuecyr-light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "helveticaneuecyr-light.otf"; sourceTree = "<group>"; };
+		CADCC2EE1EDAE598002C46AB /* HelveticaNeueCyr-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNeueCyr-LightItalic.otf"; sourceTree = "<group>"; };
+		CADCC2EF1EDAE598002C46AB /* HelveticaNeueCyr-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HelveticaNeueCyr-Medium.otf"; sourceTree = "<group>"; };
+		CADCC2F01EDAE598002C46AB /* helveticaneuecyr-roman.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "helveticaneuecyr-roman.otf"; sourceTree = "<group>"; };
+		F266C5CD06B69EDCDF230F0F /* Pods_FuelBuddyTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FuelBuddyTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA4655811EA5FBF3001A974B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40FB03B3255A83D0210BC019 /* Pods_FuelBuddyTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7DABF3DE0CE8EE3BD77C05E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F266C5CD06B69EDCDF230F0F /* Pods_FuelBuddyTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9189322FACD7DF4771E5D44B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7D6EADE848CA929E0463593 /* Pods-FuelBuddyTest.debug.xcconfig */,
+				B97B48D100BCB15453F70F5D /* Pods-FuelBuddyTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CA3E4E5D1EB3241B00A00044 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				CA3E4E5E1EB3243900A00044 /* Petrole.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		CA46557B1EA5FBF3001A974B = {
+			isa = PBXGroup;
+			children = (
+				CA4655861EA5FBF3001A974B /* FuelBuddyTest */,
+				CA4655851EA5FBF3001A974B /* Products */,
+				9189322FACD7DF4771E5D44B /* Pods */,
+				7DABF3DE0CE8EE3BD77C05E8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CA4655851EA5FBF3001A974B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA4655841EA5FBF3001A974B /* FuelBuddyTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA4655861EA5FBF3001A974B /* FuelBuddyTest */ = {
+			isa = PBXGroup;
+			children = (
+				CADB78071EB8750C0024E2C1 /* customFonts */,
+				CA3E4E5D1EB3241B00A00044 /* model */,
+				CA6E7AB01EA74BF300F7096D /* controllers */,
+				CA6E7AAF1EA74BED00F7096D /* ui */,
+				CA4655871EA5FBF3001A974B /* AppDelegate.swift */,
+				CA6E7AAB1EA7437100F7096D /* GlobalVariables.swift */,
+				CA6E7AA91EA64F5D00F7096D /* Assets.xcassets */,
+				CA46558B1EA5FBF3001A974B /* Main.storyboard */,
+				CA4655901EA5FBF3001A974B /* LaunchScreen.storyboard */,
+				CA4655931EA5FBF3001A974B /* Info.plist */,
+				CA97F6B91EA7718000633C3F /* Localizable.strings */,
+			);
+			path = FuelBuddyTest;
+			sourceTree = "<group>";
+		};
+		CA6E7AAF1EA74BED00F7096D /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				CA97F6BB1EA793DC00633C3F /* SearchTextField.swift */,
+				CA3E4E5B1EB323F300A00044 /* PetroleCell.swift */,
+				CADB78101EBB72B20024E2C1 /* CustomMarkerView.swift */,
+			);
+			name = ui;
+			sourceTree = "<group>";
+		};
+		CA6E7AB01EA74BF300F7096D /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CA4655891EA5FBF3001A974B /* MapViewController.swift */,
+				CA6E7AAD1EA7447C00F7096D /* NextStepViewController.swift */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		CADB78071EB8750C0024E2C1 /* customFonts */ = {
+			isa = PBXGroup;
+			children = (
+				CADCC2ED1EDAE598002C46AB /* helveticaneuecyr-light.otf */,
+				CADCC2EE1EDAE598002C46AB /* HelveticaNeueCyr-LightItalic.otf */,
+				CADCC2EF1EDAE598002C46AB /* HelveticaNeueCyr-Medium.otf */,
+				CADCC2F01EDAE598002C46AB /* helveticaneuecyr-roman.otf */,
+			);
+			name = customFonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA4655831EA5FBF3001A974B /* FuelBuddyTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA4655961EA5FBF3001A974B /* Build configuration list for PBXNativeTarget "FuelBuddyTest" */;
+			buildPhases = (
+				8C38A45B9E145830DD1E2486 /* [CP] Check Pods Manifest.lock */,
+				CA4655801EA5FBF3001A974B /* Sources */,
+				CA4655811EA5FBF3001A974B /* Frameworks */,
+				CA4655821EA5FBF3001A974B /* Resources */,
+				9A41D6BAD115B736E0EE1CB3 /* [CP] Embed Pods Frameworks */,
+				EC14DB238A7EA896F844D59D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FuelBuddyTest;
+			productName = FuelBuddyTest;
+			productReference = CA4655841EA5FBF3001A974B /* FuelBuddyTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA46557C1EA5FBF3001A974B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = FinApp;
+				TargetAttributes = {
+					CA4655831EA5FBF3001A974B = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 877UC55YS4;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CA46557F1EA5FBF3001A974B /* Build configuration list for PBXProject "FuelBuddyTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA46557B1EA5FBF3001A974B;
+			productRefGroup = CA4655851EA5FBF3001A974B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA4655831EA5FBF3001A974B /* FuelBuddyTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA4655821EA5FBF3001A974B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CADCC2F11EDAE609002C46AB /* helveticaneuecyr-light.otf in Resources */,
+				CADCC2F21EDAE609002C46AB /* HelveticaNeueCyr-LightItalic.otf in Resources */,
+				CADCC2F31EDAE609002C46AB /* HelveticaNeueCyr-Medium.otf in Resources */,
+				CADCC2F41EDAE609002C46AB /* helveticaneuecyr-roman.otf in Resources */,
+				CA4655921EA5FBF3001A974B /* LaunchScreen.storyboard in Resources */,
+				CA97F6BA1EA7718000633C3F /* Localizable.strings in Resources */,
+				CA6E7AAA1EA64F5D00F7096D /* Assets.xcassets in Resources */,
+				CA46558D1EA5FBF3001A974B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8C38A45B9E145830DD1E2486 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9A41D6BAD115B736E0EE1CB3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FuelBuddyTest/Pods-FuelBuddyTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC14DB238A7EA896F844D59D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FuelBuddyTest/Pods-FuelBuddyTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA4655801EA5FBF3001A974B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA3E4E5F1EB3243900A00044 /* Petrole.swift in Sources */,
+				CADB78111EBB72B20024E2C1 /* CustomMarkerView.swift in Sources */,
+				CA97F6BC1EA793DC00633C3F /* SearchTextField.swift in Sources */,
+				CA3E4E5C1EB323F300A00044 /* PetroleCell.swift in Sources */,
+				CA6E7AAC1EA7437100F7096D /* GlobalVariables.swift in Sources */,
+				CA6E7AAE1EA7447C00F7096D /* NextStepViewController.swift in Sources */,
+				CA46558A1EA5FBF3001A974B /* MapViewController.swift in Sources */,
+				CA4655881EA5FBF3001A974B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CA46558B1EA5FBF3001A974B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA46558C1EA5FBF3001A974B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CA4655901EA5FBF3001A974B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA4655911EA5FBF3001A974B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA4655941EA5FBF3001A974B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA4655951EA5FBF3001A974B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA4655971EA5FBF3001A974B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7D6EADE848CA929E0463593 /* Pods-FuelBuddyTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 877UC55YS4;
+				INFOPLIST_FILE = FuelBuddyTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.finapp.FuelBuddyTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CA4655981EA5FBF3001A974B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B97B48D100BCB15453F70F5D /* Pods-FuelBuddyTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 877UC55YS4;
+				INFOPLIST_FILE = FuelBuddyTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.finapp.FuelBuddyTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA46557F1EA5FBF3001A974B /* Build configuration list for PBXProject "FuelBuddyTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA4655941EA5FBF3001A974B /* Debug */,
+				CA4655951EA5FBF3001A974B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA4655961EA5FBF3001A974B /* Build configuration list for PBXNativeTarget "FuelBuddyTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA4655971EA5FBF3001A974B /* Debug */,
+				CA4655981EA5FBF3001A974B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA46557C1EA5FBF3001A974B /* Project object */;
+}
