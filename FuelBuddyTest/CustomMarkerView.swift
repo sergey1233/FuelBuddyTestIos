@@ -1,11 +1,3 @@
-//
-//  CustomMarkerView.swift
-//  FuelBuddyTest
-//
-//  Created by Sergey Sokhach on 04.05.17.
-//  Copyright © 2017 FinApp. All rights reserved.
-//
-
 import UIKit
 
 class CustomMarkerView: UIView {
@@ -23,7 +15,6 @@ class CustomMarkerView: UIView {
     
     init(frame: CGRect, adress: String, price: String, logo: String) {
         super.init(frame: frame)
-//        self.frame = frame
         self.adress.text = adress
         self.price.text = price
         self.logo = UIImage(named: logo)!
@@ -40,18 +31,7 @@ class CustomMarkerView: UIView {
         layerBG.frame.size.height = 36
         layerBG.backgroundColor = UIColor(patternImage: UIImage(named: "bgMarkerView")!).cgColor
         layerBG.position = CGPoint(x: 201, y: 18)
-//        addLogoImage(layerBG: layerBG)
         self.layer.addSublayer(layerBG)
-//        self.layer.backgroundColor = UIColor.red.cgColor
     }
-    
-//    func addLogoImage(layerBG: CALayer) {
-//        let logoLayer = CALayer()
-////        logoLayer.frame = CGRect(x: 0, y: 0, width: self.logo.size.width, height: self.logo.size.height)
-//        logoLayer.frame.size.width = self.logo.size.width / 2
-//        logoLayer.frame.size.height = self.logo.size.height / 2
-//        logoLayer.contents = self.logo.cgImage
-//        layerBG.addSublayer(logoLayer)
-//    }
 }
 

@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  FuelBuddyTest
-//
-//  Created by Sergey Sokhach on 18.04.17.
-//  Copyright © 2017 FinApp. All rights reserved.
-//
-
 import UIKit
 import GoogleMaps
 
@@ -169,7 +161,6 @@ class MapViewController: UIViewController, UITableViewDataSource, UITableViewDel
         
         
         customSearchBar = SearchTextField(frame: frameCustomSearchBar, tintText: NSLocalizedString("find_petrole", comment: ""), tintFont: fontCustomSearchBar, tintTextColor: searchBarTextColor)
-        //        customSearchBar.delegate = self
         customSearchBar.isUserInteractionEnabled = true
         customSearchBar.isEnabled = true
         self.topBarView.addSubview(customSearchBar)
@@ -211,16 +202,13 @@ class MapViewController: UIViewController, UITableViewDataSource, UITableViewDel
             break
         case 5:
             GlobalVariables.clickString = "like marker icon clicked"
-            print("like marker icon clicked")
             break
         case 6:
             GlobalVariables.clickString = "direction marker icon clicked"
-            print("direction marker icon clicked")
             break
         default:
             break
         }
-        print("button action")
         performSegue(withIdentifier: "click", sender: nil)
     }
     
@@ -293,7 +281,6 @@ class MapViewController: UIViewController, UITableViewDataSource, UITableViewDel
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        print("start searching")
         self.becomeFirstResponder()
     }
     
@@ -387,7 +374,6 @@ class MapViewController: UIViewController, UITableViewDataSource, UITableViewDel
         cell?.adress.text = rowElement.adress
         cell?.distance.text = "\(rowElement.distance) км"
         cell?.bgDirection.addBackground(width: (cell?.bgDirection.bounds.width)!, height: (cell?.bgDirection.bounds.height)!)
-//        cell?.bgDirection.backgroundColor = UIColor(patternImage: UIImage(named: "bg_distance")!)
         cell?.direction.image = UIImage(named: "icon_direction")
         
         let separatorView = UIView(frame: CGRect(x: 0, y: 60, width: self.tableView.bounds.size.width, height: 1))
@@ -401,7 +387,6 @@ class MapViewController: UIViewController, UITableViewDataSource, UITableViewDel
         self.mapView.clear()
         let rowElement = petroleArray[(indexPath as NSIndexPath).row]
         let selectedCell: PetroleCell = tableView.cellForRow(at: indexPath)! as! PetroleCell
-        print("set background cell")
         selectedCell.contentView.backgroundColor = UIColor(red: (208/255.0), green: (206/255.0), blue: (206/255.0), alpha: 1)
         setMarker(lat: rowElement.latitude, lon: rowElement.longitude, adress: rowElement.adress, price: rowElement.cost, logo: rowElement.icon)
     }
@@ -514,7 +499,6 @@ class MapViewController: UIViewController, UITableViewDataSource, UITableViewDel
     
     
     @IBAction func handlePan(recognizer:UIPanGestureRecognizer) {
-        print("tap recognizer")
     }
     
     func setLogoViewMarkerConstraints(logoView: UIView) {
@@ -523,7 +507,6 @@ class MapViewController: UIViewController, UITableViewDataSource, UITableViewDel
         let y = NSLayoutConstraint(item: logoView, attribute: .top, relatedBy: .equal, toItem: self.markerInfoWindow, attribute: .top, multiplier: 1.0, constant: 0)
         let w = NSLayoutConstraint(item: logoView, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 31)
         let h = NSLayoutConstraint(item: logoView, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 30)
-//        self.marker.iconView?.addConstraints([x, y])
         self.markerInfoWindow.addConstraints([x, y])
         logoView.addConstraints([w, h])
     }
@@ -539,25 +522,21 @@ class MapViewController: UIViewController, UITableViewDataSource, UITableViewDel
     }
     
     func setAdressMarkerConstraints(label: UILabel, logoView: UIView) {
-        print("adress constraint")
         label.translatesAutoresizingMaskIntoConstraints = false
         let x = NSLayoutConstraint(item: label, attribute: .leading, relatedBy: .equal, toItem: logoView, attribute: .trailing, multiplier: 1.0, constant: 6)
         let y = NSLayoutConstraint(item: label, attribute: .top, relatedBy: .equal, toItem: self.markerInfoWindow, attribute: .top, multiplier: 1.0, constant: 5)
         let w = NSLayoutConstraint(item: label, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 110)
         let h = NSLayoutConstraint(item: label, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 12)
-//        self.marker.iconView?.addConstraints([x, y])
         self.markerInfoWindow.addConstraints([x, y])
         label.addConstraints([w, h])
     }
     
     func setPriceMarkerConstraints(label: UILabel, logoView: UIView) {
-        print("price constraint")
         label.translatesAutoresizingMaskIntoConstraints = false
         let x = NSLayoutConstraint(item: label, attribute: .leading, relatedBy: .equal, toItem: logoView, attribute: .trailing, multiplier: 1.0, constant: 6)
         let y = NSLayoutConstraint(item: label, attribute: .top, relatedBy: .equal, toItem: self.markerInfoWindow, attribute: .top, multiplier: 1.0, constant: 15)
         let w = NSLayoutConstraint(item: label, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 110)
         let h = NSLayoutConstraint(item: label, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 15)
-//        self.marker.iconView?.addConstraints([x, y])
         self.markerInfoWindow.addConstraints([x, y])
         label.addConstraints([w, h])
  
@@ -569,7 +548,6 @@ class MapViewController: UIViewController, UITableViewDataSource, UITableViewDel
         let y = NSLayoutConstraint(item: btn, attribute: .top, relatedBy: .equal, toItem: self.markerInfoWindow, attribute: .top, multiplier: 1.0, constant: 8)
         let w = NSLayoutConstraint(item: btn, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 15)
         let h = NSLayoutConstraint(item: btn, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 15)
-//        self.marker.iconView?.addConstraints([x, y])
         self.markerInfoWindow.addConstraints([x, y])
         btn.addConstraints([w, h])
     }
@@ -580,7 +558,6 @@ class MapViewController: UIViewController, UITableViewDataSource, UITableViewDel
         let y = NSLayoutConstraint(item: btn, attribute: .top, relatedBy: .equal, toItem: self.markerInfoWindow, attribute: .top, multiplier: 1.0, constant: 8)
         let w = NSLayoutConstraint(item: btn, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 15)
         let h = NSLayoutConstraint(item: btn, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 15)
-//        self.marker.iconView?.addConstraints([x, y])
         self.markerInfoWindow.addConstraints([x, y])
         btn.addConstraints([w, h])
     }

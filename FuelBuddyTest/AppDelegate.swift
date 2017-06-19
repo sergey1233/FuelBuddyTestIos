@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  FuelBuddyTest
-//
-//  Created by Sergey Sokhach on 18.04.17.
-//  Copyright © 2017 FinApp. All rights reserved.
-//
-
 import UIKit
 import GoogleMaps
 import GooglePlaces
